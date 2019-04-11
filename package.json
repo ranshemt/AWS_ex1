@@ -1,0 +1,21 @@
+{
+  "name": "ex1_aws_g114",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.437.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "node-cron": "^2.0.3",
+    "slack-webhook": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
