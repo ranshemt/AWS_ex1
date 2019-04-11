@@ -27,7 +27,9 @@ async function mainLoop() {
     }
 }
 //
+mainLoop()
+//
 cron.schedule('*/1 * * * *', async () => {
     console.log('*\n**\n***\nruning the loop every 1 minute')
-    mainLoop()
+    await mainLoop()
 })
