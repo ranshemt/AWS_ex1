@@ -1,7 +1,6 @@
 if (process.env.NODE_ENV !== 'production')
     require('dotenv').config()
 //
-const cron = require ('node-cron')
 const FU = require ('./funcs')
 //
 let S3_Q = process.env.s3_all
@@ -28,8 +27,3 @@ async function mainLoop() {
 }
 //
 mainLoop()
-//
-cron.schedule('*/1 * * * *', async () => {
-    console.log('*\n**\n***\nruning the loop every 1 minute')
-    await mainLoop()
-})
